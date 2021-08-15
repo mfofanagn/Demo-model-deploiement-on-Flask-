@@ -2,7 +2,7 @@ import math
 from flask import Flask, render_template, url_for, request
 import pickle
 import os
-from Week5 import breast_cancer
+from model import breast_cancer
 import numpy as np
 
 model = pickle.load(open("breast_cancer.pkl","rb"))
